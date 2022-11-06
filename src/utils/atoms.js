@@ -24,3 +24,8 @@ export const TotalWeekData = atom({
   key: 'TotalWeekData',
   default: []
 });
+
+export const PreviousWeekData = atom({
+  key: 'PreviousWeekData',
+  default: []
+});

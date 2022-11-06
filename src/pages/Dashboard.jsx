@@ -1,6 +1,5 @@
 import React from 'react';
-import { Box, Card, CardContent, Grid, Stack, Typography } from '@mui/material';
-import FilterContainer from '../molecules/FilterContainer';
+import { Card, Stack, Typography } from '@mui/material';
 import StatusOverview from '../molecules/StatusOverview';
 import WeeklyPicker from '../molecules/WeeklyPicker';
 import Chart from '../molecules/Chart';
@@ -18,7 +17,6 @@ export default function Dashboard() {
         <StatusOverview />
         <Chart />
       </Card>
-      <FilterContainer />
     </>
   );
 }

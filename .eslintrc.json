@@ -31,9 +31,6 @@
     "operator-linebreak": "off",
     "implicit-arrow-linebreak": "off",
     "react/jsx-no-useless-fragment": "off",
-    "camelcase": "off",
-    "new-cap": "off",
-    "react/no-unstable-nested-components": "off",
     "react/jsx-props-no-spreading": "off",
     "react/no-children-prop": "off",
     "react/jsx-no-constructed-context-values": "off",
@@ -44,6 +41,7 @@
     "no-return-assign": "off",
     "no-sequences": "off",
     "no-unused-expressions": "off",
-    "function-paren-newline": "off"
+    "function-paren-newline": "off",
+    "class-methods-use-this": "off"
   }
 }
