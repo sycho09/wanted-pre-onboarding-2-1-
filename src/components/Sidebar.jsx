@@ -9,6 +9,7 @@ import {
   ListItemButton,
   ListItemText
 } from '@mui/material';
+import SelectStatus from '../molecules/SelectStatus';
 
 const drawerWidth = 240;
 
@@ -37,7 +38,7 @@ export default function Sidebar() {
       anchor='left'
     >
       <Typography variant='h5' pt={2} px={2}>
-        LEXVW
+        LEVER
       </Typography>
       <Divider variant='middle' sx={{ mt: 5 }} />
       <List py={1}>
@@ -46,7 +47,13 @@ export default function Sidebar() {
             서비스
           </Typography>
         </ListItem>
-        <ListItem>select menu</ListItem>
+        <ListItem>
+          <SelectStatus
+            SelectList={['매드업', '서비스 추가']}
+            selected={select}
+            selectHandler={setSelect}
+          />
+        </ListItem>
         <ListItem sx={{ pt: 4, pb: 1 }}>
           <Typography variant='caption' gutterBottom>
             광고센터
