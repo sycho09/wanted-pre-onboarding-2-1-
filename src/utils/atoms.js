@@ -5,13 +5,13 @@ export const FilteredList = atom({
   default: []
 });
 
-export const SelectedFirstFilter = atom({
-  key: 'SelectedFirstFilter',
+export const FirstFilter = atom({
+  key: 'FirstFilter',
   default: '매출'
 });
 
-export const SelectedSecondFilter = atom({
-  key: 'SelectedSecondFilter',
+export const SecondFilter = atom({
+  key: 'SecondFilter',
   default: '광고비용'
 });
 

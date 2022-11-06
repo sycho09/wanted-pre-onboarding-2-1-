@@ -1,15 +1,18 @@
 import React from 'react';
-import { CssBaseline, ThemeProvider } from '@mui/material';
+import { RecoilRoot } from 'recoil';
 import { RouterProvider } from 'react-router-dom';
+import { CssBaseline, ThemeProvider } from '@mui/material';
 import Router from './router';
 import theme from './styles/theme';
 
 function App() {
   return (
-    <ThemeProvider theme={theme}>
-      <CssBaseline />
-      <RouterProvider router={Router} />
-    </ThemeProvider>
+    <RecoilRoot>
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        <RouterProvider router={Router} />
+      </ThemeProvider>
+    </RecoilRoot>
   );
 }
 
