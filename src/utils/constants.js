@@ -18,3 +18,6 @@ export const FILTER_LIST = {
 
 export const FilterListKeys = Object.keys(FILTER_LIST);
 export const FilterListValues = Object.values(FILTER_LIST);
+
+export const START_DATE = 1644451200000;
+export const PER_WEEK = 7;
