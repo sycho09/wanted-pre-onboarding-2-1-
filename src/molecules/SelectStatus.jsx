@@ -24,7 +24,9 @@ export default function SelectStatus({
           <em>{SelectList[0]}</em>
         </MenuItem>
         {SelectList.map((el) => (
-          <MenuItem value={el}>{el}</MenuItem>
+          <MenuItem key={el} value={el}>
+            {el}
+          </MenuItem>
         ))}
       </Select>
     </FormControl>

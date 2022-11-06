@@ -28,7 +28,6 @@
     "react/prop-types": "off",
     "no-alert": "off",
     "object-curly-newline": "off",
-    "class-methods-use-this": "off",
     "operator-linebreak": "off",
     "implicit-arrow-linebreak": "off",
     "react/jsx-no-useless-fragment": "off",
@@ -41,6 +40,10 @@
     "react/destructuring-assignment": "off",
     "no-unused-vars": "off",
     "react/function-component-definition": "off",
-    "arrow-body-style": "off"
+    "arrow-body-style": "off",
+    "no-return-assign": "off",
+    "no-sequences": "off",
+    "no-unused-expressions": "off",
+    "function-paren-newline": "off"
   }
 }
