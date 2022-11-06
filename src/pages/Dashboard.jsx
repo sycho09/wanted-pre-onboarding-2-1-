@@ -2,6 +2,7 @@ import React from 'react';
 
 import { Box, Card, CardContent, Grid, Stack, Typography } from '@mui/material';
 import FilterContainer from '../molecules/FilterContainer';
+import StatusOverview from '../molecules/StatusOverview';
 
 export default function Dashboard() {
   return (
@@ -11,7 +12,9 @@ export default function Dashboard() {
           광고현황
         </Typography>
       </Stack>
-
+      <Card>
+        <StatusOverview />
+      </Card>
       <FilterContainer />
     </>
   );
