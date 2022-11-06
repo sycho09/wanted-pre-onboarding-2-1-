@@ -11,6 +11,7 @@ import {
 } from 'chart.js';
 import { Line } from 'react-chartjs-2';
 import { useRecoilState, useRecoilValue } from 'recoil';
+import { Box } from '@mui/material';
 import { FilterListKeys, FilterListValues } from '../utils/constants';
 import { ChartDisplayList, FirstFilter, SecondFilter } from '../utils/atoms';
 import { setOptions } from '../utils/functions';
@@ -81,7 +82,7 @@ export default function Chart() {
   );
 
   return (
-    <>
+    <Box my={2} p={1}>
       <SelectStatus
         SelectList={FilterListValues}
         selected={firstFilter}
@@ -94,7 +95,11 @@ export default function Chart() {
         selectHandler={setSecondFilter}
         isDisabled={!firstFilter}
       />
-      {selectedWeek && <Line options={options} data={data} />}
-    </>
+      {selectedWeek && (
+        <Box p={3}>
+          <Line options={options} data={data} />
+        </Box>
+      )}
+    </Box>
   );
 }
