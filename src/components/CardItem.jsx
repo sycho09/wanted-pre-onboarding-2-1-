@@ -4,7 +4,7 @@ import React from 'react';
 export default function CardItem({ label, content }) {
   return (
     <TextField
-      sx={{ width: '100%' }}
+      sx={{ width: '100%', fontSize: '0.9rem', mb: 1 }}
       disabled
       InputProps={{
         startAdornment: (
@@ -12,7 +12,8 @@ export default function CardItem({ label, content }) {
         ),
         sx: {
           '& input': {
-            textAlign: 'right'
+            textAlign: 'right',
+            fontSize: '0.9rem'
           },
           '& .MuiInputBase-input.Mui-disabled': {
             WebkitTextFillColor: '#000'
