@@ -1,5 +1,5 @@
-import { FormControl, MenuItem, Select, styled } from '@mui/material';
-import React, { useState } from 'react';
+import React from 'react';
+import { FormControl, MenuItem, Select } from '@mui/material';
 
 export default function SelectStatus({
   SelectList,
